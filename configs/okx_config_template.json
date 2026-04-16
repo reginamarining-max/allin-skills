@@ -1,0 +1,29 @@
+{
+  "api_key": "YOUR_OKX_API_KEY_HERE",
+  "secret_key": "YOUR_OKX_SECRET_KEY_HERE",
+  "passphrase": "YOUR_OKX_PASSPHRASE_HERE",
+  "testnet": true,
+  "default_symbols": [
+    "BTC-USDT",
+    "ETH-USDT",
+    "SOL-USDT",
+    "BNB-USDT",
+    "XRP-USDT"
+  ],
+  "data_retention_days": 30,
+  "update_intervals": {
+    "ticker": 5,
+    "candles_1m": 60,
+    "candles_5m": 300,
+    "candles_15m": 900,
+    "candles_1H": 3600,
+    "candles_4H": 14400,
+    "candles_1D": 86400
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/okx_api.log",
+    "max_size_mb": 10,
+    "backup_count": 5
+  }
+}
